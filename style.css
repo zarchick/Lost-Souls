@@ -304,6 +304,20 @@ p{margin-top: 10px; /* отступ сверху */
 /*-------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------*/
 
+.voice-btn{
+  margin-left:12px;
+  padding:6px 10px;
+  background:#c00;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+  vertical-align:middle;
+}
+.voice-btn svg{
+  width:20px;
+  height:20px;
+  vertical-align:middle;
+}
 
 /* плеер в потоке, под текстом */
 .player{
