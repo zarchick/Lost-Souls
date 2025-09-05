@@ -16,7 +16,15 @@
 
   <!-- Лор -->
   <main class="lore-text">
-    <h1>Химико</h1>
+    <h1>Химико
+      <button class="voice-btn" onclick="playVoice()">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+      <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a6 6 0 0 1 0 7.08"></path>
+    </svg>
+  </button>
+  <audio id="voice" src="sounds/Himicko_voice.MP3" preload="auto"></audio>
+    </h1>
     <h2>"Лисица-проводница"</h2>
     <p>
       Химико - Древний дух способный превращаться в Лисицу с лазурным мехом. Является только тем, кто сбился со своего пути и помогает найти верную дорогу.
@@ -139,3 +147,9 @@ updateProgressBar(volSlider, 100);
 <div class="footer-center">
   <a href="index.html" class="btn-back">Назад</a>
 </div>
+
+<script>
+  function playVoice(){
+  document.getElementById('voice').play();
+}
+</script>
