@@ -234,11 +234,18 @@ p{margin-top: 10px; /* отступ сверху */
   box-shadow:0 0 6px 2px #00bfff,
              0 0 12px 6px #00bfff,
              0 0 20px 10px #00bfff !important;
+             
+}
+.chapter-card:nth-child(3).active:hover{
+    box-shadow:
+        0 0 6px 2px lab(64.48% -23.9 5.39),
+        0 0 12px 6px lab(64.48% -23.9 5.39),
+        0 0 20px 10px lab(64.48% -23.9 5.39);
 }
 /* ---------- цвета контуров глав ---------- */
 .chapter-card:nth-child(1){border-color:#00bfff;}   /* пролог – голубой */
 .chapter-card:nth-child(2){border-color:#c00;}      /* 1 глава – красная (оставляем) */
-.chapter-card:nth-child(3){border-color:hsl(0, 0%, 37%);}   /* 2 глава – зелёно-салатовая */
+.chapter-card:nth-child(3){border-color:lab(64.48% -23.9 5.39);}   /* 2 глава – зелёно-салатовая */
 .chapter-card:nth-child(4){border-color:hsl(0, 0%, 37%);}   /* 3 глава – сине-фиолетовая */
 .chapter-card:nth-child(5){border-color:hsl(0, 0%, 37%);}      /* 4 глава – красная */
 .chapters-wrapper
